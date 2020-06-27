@@ -1,174 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <title>my cool site</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
+    <meta name="author" content="Andrii Aheiev">
+
+    <title>Andrii Aheiev's Site</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css">
-    <!-- Third party plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/css/styles.css" rel="stylesheet">
-  </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-      <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/node_modules/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/one-page.css">
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto my-2 my-lg-0">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-center text-center">
-          <div class="col-lg-10 align-self-end">
-            <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>
-            <hr class="divider my-4">
-          </div>
-          <div class="col-lg-8 align-self-baseline">
-            <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p><a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- About-->
-    <section class="page-section bg-primary" id="about">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">We've got what you need!</h2>
-            <hr class="divider light my-4">
-            <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p><a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services-->
-    <section class="page-section" id="services">
-      <div class="container">
-        <h2 class="text-center mt-0">At Your Service</h2>
-        <hr class="divider my-4">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5"><i class="fas fa-4x fa-gem text-primary mb-4"></i>
-              <h3 class="h4 mb-2">Sturdy Themes</h3>
-              <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5"><i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-              <h3 class="h4 mb-2">Up to Date</h3>
-              <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5"><i class="fas fa-4x fa-globe text-primary mb-4"></i>
-              <h3 class="h4 mb-2">Ready to Publish</h3>
-              <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5"><i class="fas fa-4x fa-heart text-primary mb-4"></i>
-              <h3 class="h4 mb-2">Made with Love</h3>
-              <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio-->
-    <div id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters">
-          <div class="col-lg-4 col-sm-6"><a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg"><img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div></a></div>
-          <div class="col-lg-4 col-sm-6"><a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg"><img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div></a></div>
-          <div class="col-lg-4 col-sm-6"><a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg"><img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div></a></div>
-          <div class="col-lg-4 col-sm-6"><a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg"><img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div></a></div>
-          <div class="col-lg-4 col-sm-6"><a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg"><img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div></a></div>
-          <div class="col-lg-4 col-sm-6"><a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg"><img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption p-3">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div></a></div>
-        </div>
-      </div>
     </div>
-    <!-- Call to action-->
-    <section class="page-section bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2><a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
-      </div>
-    </section>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="mt-0">Let's Get In Touch!</h2>
-            <hr class="divider my-4">
-            <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
-          </div>
+</nav>
+
+    <header class="bg-secondary text-white">
+    <div class="container text-center">
+    <div class="row">
+        <div class="col-9 py-2">
+            <h2 class="h2 py-2 text-right">Andrii Aheiev</h2>
+            <h3 class="h3 py-2 text-right">DevOps, Cloud Architect, DBA</h3>
+            <p class="lead text-right">
+                Design, build, test, run and automate microservices in the cloud.
+            </p>
+            <ul class="nav text-right mt-5 justify-content-end">
+                <li class="nav-item px-2">
+                    <a href="/assets/files/Andrii_Aheiev-DevOps-2020.pdf">
+                        <i class="far fa-file-pdf"></i> Resume PDF
+                    </a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="mailto:a.ageyev@gmail.com">
+                        <i class="far fa-envelope"></i> Email
+                    </a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="callto:a.ageiev">
+                        <i class="fab fa-skype"></i> Skype
+                    </a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="https://www.linkedin.com/in/aaheiev">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a href="https://github.com/aaheiev">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0"><i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-            <div>+1 (555) 123-4567</div>
-          </div>
-          <div class="col-lg-4 mr-auto text-center"><i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-            <!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
-          </div>
+        <div class="col-3 py-2">
+            <img class="img-thumbnail" src="/assets/img/Andrii.Ageiev.png">
         </div>
-      </div>
-    </section>
-    <!-- Footer-->
-    <footer class="bg-light py-5">
-      <div class="container">
-        <div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div>
-      </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="/assets/js/scripts.js"></script>
-  </body>
+    </div>
+</div>
+
+</header>
+
+<section id="about">
+    <div class="container">
+    <h3 class="h3 text-center my-2">Design, build, automate infrastructure and CI/CD processes</h3>
+    <hr class="my-3" />
+    <br />
+    <div class="row">
+        <div class="col-4 col-md-4 col-lg-4 mx-auto py-2 skills">
+
+            <h5 class="h5">Skills and Tools</h5>
+            <p class="tags shadow bg-white rounded p-3">
+                <span class="badge badge-info">AWS</span>
+                <span class="badge badge-info">Azure</span>
+                <span class="badge badge-info">Google CLoud</span>
+                <span class="badge badge-info">Digital Ocean</span>
+                <span class="badge badge-info">Linode</span>
+                <span class="badge badge-info">Azure Devops</span>
+                <span class="badge badge-info">IaC</span>
+                <span class="badge badge-info">Terraform</span>
+                <span class="badge badge-info">Ansible</span>
+                <span class="badge badge-info">Docker</span>
+                <span class="badge badge-info">Kubernetes</span>
+                <span class="badge badge-info">Puppet</span>
+                <span class="badge badge-info">Linux</span>
+                <span class="badge badge-info">Monitoring</span>
+                <span class="badge badge-info">Security</span>
+                <span class="badge badge-info">SEM</span>
+                <span class="badge badge-info">CISO</span>
+                <span class="badge badge-info">PCI DSS</span>
+                <span class="badge badge-info">Shell Scripting</span>
+                <span class="badge badge-info">Git</span>
+                <span class="badge badge-info">Inventory</span>
+                <span class="badge badge-info">Change Management</span>
+                <span class="badge badge-info">Jenkins</span>
+                <span class="badge badge-info">Teamcity</span>
+                <span class="badge badge-info">Octopus Deploy</span>
+                <span class="badge badge-info">Ansible Tower</span>
+                <span class="badge badge-info">Oracle</span>
+                <span class="badge badge-info">PostgreSQL</span>
+                <span class="badge badge-info">MySQL</span>
+                <span class="badge badge-info">MSSQL</span>
+                <span class="badge badge-info">MongoDB</span>
+                <span class="badge badge-info">Redis</span>
+                <span class="badge badge-info">Ruby</span>
+                <span class="badge badge-info">Ruby On Rails</span>
+                <span class="badge badge-info">PHP</span>
+                <span class="badge badge-info">NodeJs/JavaScript</span>
+                <span class="badge badge-info">.Net</span>
+            </p>
+
+        </div>
+        <div class="col-8 col-md-8 col-lg-8 mx-auto py-2">
+            <h5 class="h5 text-left my-2">
+                DevOps Engineer with 12+ years of experience in managing cloud infrastructure, ci/cd processes and automation.
+            </h5>
+            <ul class="m-3">
+                <li>Designing and implementing infrastructure as code for AWS, Azure, GoogleCloud, DigitalOcean and other.</li>
+                <li>Designing, implementing and automating CI/CD processes and application infrastructure.</li>
+                <li>Design and support application migration from VM-based infrastructure to dokerized micro-services in Kubernetes.</li>
+                <li>Design and automate full application lifecycle CI/CD processes for docker and Kubernetes.</li>
+                <li>
+                    Bringing operation requirements to software engineering and provide maximum scalability
+                    and availability for applications and services.
+                </li>
+            </ul>
+
+            <h5 class="h5 text-left my-2">
+                Building and optimizing applications infrastructure in cloud
+            </h5>
+            <p class="my-2 text-justify">
+                Describe OS, software, network, computer resources configuration and create
+                Infrastructure and Configuration As Code with Terraform, Ansible, Puppet, and other
+                tools on different clouds: AWS, Azure, GoogleCloud, DigitalOcean, etc.
+            </p>
+            <ul class="m-3">
+                <li>Optimizing infrastructure and application for high load.</li>
+                <li>Implement infrastructure as code and change management.</li>
+                <li>Design and implement application, infrastructure and security monitoring.</li>
+                <li>Implement notification policies and define escalation rules.</li>
+                <li>Create backup and disaster recovery process. Implement data archiving.</li>
+            </ul>
+
+            <h5 class="h5 text-left my-2">
+                Implementing CI/CD processes for dockerized apps and Kubernetes
+            </h5>
+            <p class="my-2 text-justify">
+                Create Jenkins, Azure DevOps, Teamcity pipelines to implement
+            </p>
+            <ul class="m-3">
+                <li>Build application with docker. Move build configuration to the Dockerfile.</li>
+                <li>Publish and promote docker image to container registry</li>
+                <li>Deploy docker container to Kubernetes with helm and run integrational tests</li>
+                <li>Run integration, acceptance or distributed performance testing</li>
+                <li>Deploy application to development environment and trigger release pipelines</li>
+            </ul>
+
+            <h5 class="h5 text-left my-2">
+                Machine Learning workflows automation and CI/CD
+            </h5>
+            <ul class="m-3">
+                <li>Build application with docker. Move build configuration to the Dockerfile.</li>
+                <li>Creating automation for models train and test accuracy</li>
+                <li>Publish models as docker artifact</li>
+                <li>Run prediction apllications in Kubernetes</li>
+                <li>Automate models releasing process with Airflow and Jenkins</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+</section>
+
+<section id="experience" class="bg-light">
+    <div class="container">
+    <h3 class="h3 py-2 my-2 section-header">Experience</h3>
+    <hr class="my-3" />
+    <br />
+    <div class="row">
+  <div class="col-md-4">
+    <div class="text-left p-2">
+      <p class="dates py-2">Contract: Feb 2020 - now</p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Azure</span><span class="badge badge-info">Azure Devops</span><span class="badge badge-info">Docker</span><span class="badge badge-info">Kubernetes</span><span class="badge badge-info">CI/CD</span><span class="badge badge-info">Azure Pipelines</span><span class="badge badge-info">Azure Monitoring</span><span class="badge badge-info">Azure Security Monitoring</span><span class="badge badge-info">SEM</span><span class="badge badge-info">CISO</span><span class="badge badge-info">Aqua Security</span><span class="badge badge-info">Microservices</span></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="text-left">
+      <h4 class="h4 py-3 text-left ing">Site Reliability Engineer. XLinQ / ING &nbsp;</h4>
+      <h5 class="h5 py-2">Infrastructure development and CI/CD processes automation</h5>
+      <ul class="py-2 pr-3">
+        <li>Azure cloud infrastructure design and automation with shell scripts, terraform and azure devops</li>
+        <li>infrastructure, application and security monitoring design and implementation (<a href="https://azure.microsoft.com/en-us/services/monitor/?&amp;ef_id=CjwKCAjw57b3BRBlEiwA1ImytiMistPUwWY8VGItJHBds5DbpUOM3ZmLng1qEhcX3JDzrgXd7CHZ2RoCHEYQAvD_BwE:G:s&amp;OCID=AID2000098_SEM_CjwKCAjw57b3BRBlEiwA1ImytiMistPUwWY8VGItJHBds5DbpUOM3ZmLng1qEhcX3JDzrgXd7CHZ2RoCHEYQAvD_BwE:G:s&amp;dclid=CJONgYLbkOoCFdf5dwodh_EJKw">Azure Monitoring,&nbsp;</a><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal">Azure Log Analytics,&nbsp;</a><a href="https://azure.microsoft.com/en-in/services/azure-sentinel/">Azure Sentinel</a>)</li>
+        <li>SEM and CISO implementation</li>
+        <Li>microservices design and full implementation (build, deploy and release with azure pipeline to AKS)</Li>
+        <li>CI/CD process design and optimization</li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-md-4">
+    <div class="text-left p-2">
+      <p class="dates py-2">Contract: June 2018 - Dec. 2020</p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Docker</span><span class="badge badge-info">Kubernetes</span><span class="badge badge-info">helm</span><span class="badge badge-info">Jenkins</span><span class="badge badge-info">Ansible</span><span class="badge badge-info">Azure</span><span class="badge badge-info">AWS</span><span class="badge badge-info">Groovy</span><span class="badge badge-info">.Net</span><span class="badge badge-info">NodeJS</span><span class="badge badge-info">Ruby</span><span class="badge badge-info">Airflow</span><span class="badge badge-info">ML</span><span class="badge badge-info">H2O</span><span class="badge badge-info">MSSQL</span><span class="badge badge-info">Load / acceptance testing</span><span class="badge badge-info">Automation</span></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="text-left">
+      <h4 class="h4 py-3 text-left">Senior DevOps. PitneyBowes</h4>
+      <h5 class="h5 py-2">Application infrastructure development and CI/CD processes automation</h5>
+      <ul class="py-2 pr-3">
+        <li>
+          Jenkins CI/CD Pipelines: build, test, publish and deploy micro-services&nbsp;(NodeJS, .Net with Docker and Kubernetes)</li>
+        <li>Application infrastructure design and implementation with docker and Kubernetes (AKS, EKS)</li>
+        <li>Release preparation</li>
+        <li>
+          Design and implementation Machine Learning CI/CD pipelines(train, test and deploy prediction application)</li>
+      </ul>
+      <p><strong>What was done:</strong></p>
+      <ul>
+        <li>Dockerized complex .Net event-processing application and created set of micro-services
+          <ol>
+            <li>application requirements (health url, logging, resources, etc.)</li>
+            <li>resources profiling: cpu/ram requests and limits with autoscaling rules</li>
+            <li>local dev environment with docker-compose</li>
+            <li>qa / stage / prod environment install in Kubernetes using helm</li>
+            <li>automated integration and acceptance testing</li>
+            <li>ci/cd automation: Jenkins, Teamcity, Octopus</li>
+          </ol>
+        </li>
+        <li>ML prediction app pipelines - design and automation
+          <ol>
+            <li>airflow configuration and train/test workflow automation</li>
+            <li>dynamic H2O cluster allocation in Kubernetes</li>
+            <li>docker jetty container with H2O models</li>
+            <li>deploy and performance testing for prediction API</li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-md-4">
+    <div class="text-left p-2">
+      <p class="dates py-2">Contract: May 2017 - June 2018</p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Jenkins</span><span class="badge badge-info">Groovy</span><span class="badge badge-info">Docker</span><span class="badge badge-info">Ansible</span><span class="badge badge-info">AWS</span><span class="badge badge-info">Ruby</span><span class="badge badge-info">Backup</span><span class="badge badge-info">Oracle</span><span class="badge badge-info">MySQL</span><span class="badge badge-info">RDS</span><span class="badge badge-info">Automation</span></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="text-left">
+      <h4 class="h4 py-3 text-left">Senior DevOps. Provectus for Determine</h4>
+      <h5 class="h5 py-2">Infrastructure and processes automation for PaS in AWS.</h5>
+      <ul class="py-2 pr-3">
+        <li>Completely redesigned, automated and implemented backup processes for PaS (Java + Oracle and LAMP) on AWS</li>
+        <li>Development of infrastructure inventory microservices (ruby, ruby-on-rails).</li>
+        <li>Infrastructure processes automation with Jenkins and Ansible Tower (AWX)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-md-4">
+    <div class="text-left p-2">
+      <p class="dates py-2">Contract: Oct 2016 - Apr 2017</p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Google Cloud</span><span class="badge badge-info">AWS</span><span class="badge badge-info">Ansible</span><span class="badge badge-info">Puppet</span><span class="badge badge-info">Terraform</span><span class="badge badge-info">Jira</span><span class="badge badge-info">Confluence</span><span class="badge badge-info">Bamboo</span><span class="badge badge-info">MySQL</span><span class="badge badge-info">Automation</span><span class="badge badge-info">MPI Clusters</span><span class="badge badge-info">MacOS Build Pool</span></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="text-left">
+      <h4 class="h4 py-3 text-left">DevOps Architect. Appko for Nest</h4>
+      <h5 class="h5 py-2">Dev Infrastructure migration from AWS to Google Cloud.</h5>
+      <ul class="py-2 pr-3">
+        <li>Infrastructure design for Development services in Google Cloud Platform (Atlassian stack and build infrastructure)</li>
+        <li>Automate infrastructure provisioning and configuration.</li>
+        <li>Migration from AWS to Google Cloud: move dev-infrastructure services and MacOS build agents pool.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-md-4">
+    <div class="text-left p-2">
+      <p class="dates py-2">Freelancer: Apr 2012 - Oct 2016</p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Private Cloud</span><span class="badge badge-info">Public Cloud</span><span class="badge badge-info">DNS and domains</span><span class="badge badge-info">SSL/TLS</span><span class="badge badge-info">PCI DSS</span><span class="badge badge-info">Linux</span><span class="badge badge-info">Apache</span><span class="badge badge-info">Puppet</span><span class="badge badge-info">Nginx</span><span class="badge badge-info">php-fpm</span><span class="badge badge-info">MySQL</span><span class="badge badge-info">Redis</span><span class="badge badge-info">PostgreSQL</span><span class="badge badge-info">VMware</span><span class="badge badge-info">HP Blades</span><span class="badge badge-info">SAN / NAS</span></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="text-left">
+      <h4 class="h4 py-3 text-left">DevOps, Linux Administrator, DBA</h4>
+      <h5 class="h5 py-2">Infrastructure and processes design and configuration.</h5>
+      <p class="py-2">Design build and support infrastructure for various web applications and projects in Public and Private Clouds.</p>
+      <ul class="py-2 pr-3">
+        <li>Development infrastructure setup (git / jira/ confluence / ci/cd)</li>
+        <li>MVP Releasing</li>
+        <li>Production infrastructure design and configuration</li>
+        <li>Infrastructure optimization for HighLoad web projects.</li>
+        <li>Disaster-recovery processes and cross-region data replication.</li>
+        <li>Database management and optimization.</li>
+        <li>Infrastructure design for Development services in Google Cloud Platform (Atlassian stack and build infrastructure)</li>
+        <li>Automate infrastructure provisioning and configuration.</li>
+        <li>Migration from AWS to Google Cloud: move dev-infrastructure services and MacOS build agents pool.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-md-8 offset-md-4 justify-content-end">
+    <h4 class="h4 py-3 text-left">Lohika</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="text-left p-2">
+      <p class="dates py-2">Contract: Apr 2007 - Apr. 2012</p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Private Cloud</span><span class="badge badge-info">VMware</span><span class="badge badge-info">Monitoring</span><span class="badge badge-info">Change Management</span><span class="badge badge-info">Assets Management</span><span class="badge badge-info">Resources Planing</span></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="text-left">
+      <h5 class="h5 py-2">Site IT manager / Ops Lead</h5>
+      <p>
+        Entire site operation, IT infrastructure and team management, site IT budget planning.&nbsp;Communication with software and hardware vendors and resellers.&nbsp;
+        Communication with local service-providers.
+      </p>
+      <p>Resources planning for Company Private Cloud.</p>
+      <p><strong>On that position:</strong></p>
+      <ul class="py-2 pr-3">
+        <li>Prepared budget for Private Cloud (for local datacenter). Dealing directly with software and hardware resellers to get best term and prices.</li>
+        <li>Design and deployment of Private Cloud on external datacenter.</li>
+        <li>Implemented new workflow to delivery resources to DEV and QA, which allows us to more flexible planning and managing resources.</li>
+        <li>Designed and implemented IT infrastructure for two new office-spaces in Odessa. (Telephony, networking, conference-rooms, etc.)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="text-left p-2">
+      <p class="dates py-2">Contract: Aug 2005 - Apr. 2007</p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Oracle</span><span class="badge badge-info">RHEL</span><span class="badge badge-info">SLES</span><span class="badge badge-info">Solaris</span><span class="badge badge-info">VMware</span><span class="badge badge-info">Private Cloud</span><span class="badge badge-info">Windows Server</span><span class="badge badge-info">HP</span><span class="badge badge-info">SAN</span><span class="badge badge-info">Automation</span><span class="badge badge-info">IBM</span><span class="badge badge-info">EMC</span></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="text-left">
+      <h5 class="h5">Senior IT / DevOps</h5>
+      <p>Operational support for large QA/Dev Lab</p>
+      <p>Support of different application environments with separated or shared DB (Oracle, MySQL, SQL)</p>
+      <p>Linux Administrator, Oracle DBA</p>
+      <ul class="py-2 pr-3">
+        <li>Private Cloud management</li>
+        <li>multiple application setup and management (testing and certification)</li>
+        <li>Oracle RDBMS Administrator</li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-md-4">
+    <div class="text-left p-2">
+      <p class="dates py-2">Apr 2003 - Aug 2005</p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">C/C++</span><span class="badge badge-info">PHP</span><span class="badge badge-info">Perl</span><span class="badge badge-info">MySQL</span><span class="badge badge-info">PostgreSQL</span><span class="badge badge-info">Linux</span><span class="badge badge-info">PBX</span><span class="badge badge-info">Telecom</span></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="text-left">
+      <h4 class="h4 py-3 text-left">Software Engineer / DBA. TWT Ukraine - telecom</h4>
+      <h5 class="h5 py-2">Development and support for telecom billing.</h5>
+      <ul class="py-2 pr-3">
+        <li>Calls billing: Development, support and optimisation.</li>
+        <li>MySQL / PostgreSQL DBA</li>
+        <li>Linux / FreeBSD administrator</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+</section>
+
+<section id="education" class="bg-light">
+    <div class="container">
+    <h3 class="h3 py-2 my-2 section-header">Education</h3>
+    <hr class="my-3" />
+    <br />
+    <div class="row p-2">
+  <div class="col-7">
+    <h5 class="h5">Computer and Network Systems</h5>
+    <h6 class="h6">Odesa State Polytechnic University</h6>
+  </div>
+  <div class="col-5">
+    <p class="dates">Odesa, Ukraine. 1998 - 2003.</p>
+  </div>
+</div>
+<div class="row p-2">
+  <div class="col-7">
+    <h5 class="h5">M102. MongoDB for DBA</h5>
+    <h6 class="h6">MongoDB University</h6>
+  </div>
+  <div class="col-5">
+    <p class="dates"><a href="https://university.mongodb.com/course_completion/94d4710b85484f988a7274823b1db417/printable">Online certificate.&nbsp;</a>2016.</p>
+  </div>
+</div>
+<div class="row p-2">
+  <div class="col-7">
+    <h5 class="h5">VMware vSphere 4.0 – Deploy, Configure, Manage</h5>
+    <h6 class="h6">HP Education center</h6>
+  </div>
+  <div class="col-5">
+    <p class="dates">Kyiv, Ukraine. 2011.</p>
+  </div>
+</div>
+<div class="row p-2">
+  <div class="col-7">
+    <h5 class="h5">Oracle 10G Administrator</h5>
+    <h6 class="h6">Kvazar Micro Education center</h6>
+  </div>
+  <div class="col-5">
+    <p class="dates">Kyiv, Ukraine. 2006.</p>
+  </div>
+</div>
+</div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="py-3 bg-secondary">
+    <div class="container">
+        <p class="m-0 text-center text-white">Andrii Aheiev 2020. Amstelveen, The Netherlands</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="/node_modules/jquery.easing/jquery.easing.min.js"></script>
+<script src="/node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<!-- Custom JavaScript for this theme -->
+
+<script src="/assets/js/scrolling-nav.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141122387-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-141122387-1');
+</script>
+</body>
 </html>
