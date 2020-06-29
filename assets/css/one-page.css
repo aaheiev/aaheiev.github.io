@@ -2718,9 +2718,12 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
   .table-dark { color: inherit; }
   .table-dark th, .table-dark td, .table-dark thead th, .table-dark tbody + tbody { border-color: #dee2e6; }
   .table .thead-dark th { color: inherit; border-color: #dee2e6; } }
-#mainNav { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background-color: #fff; transition: background-color 0.2s ease; }
-#mainNav .navbar-brand { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 700; color: #212529; }
-#mainNav .navbar-nav .nav-item .nav-link { color: #6c757d; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 700; font-size: 0.9rem; padding: 0.75rem 0; }
+.text-white-75 { color: rgba(255, 255, 255, 0.75); }
+
+#mainNav { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/assets/img/bg-masthead.jpg"); background-color: transparent; transition: background-color 0.2s ease; }
+#mainNav .navbar-brand { font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 700; color: rgba(255, 255, 255, 0.7); }
+#mainNav .navbar-brand:hover { color: #fff; }
+#mainNav .navbar-nav .nav-item .nav-link { color: rgba(255, 255, 255, 0.7); font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 700; font-size: 0.9rem; padding: 0.75rem 0; }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active { color: #fff; }
 #mainNav .navbar-nav .nav-item .nav-link.active { color: #fff !important; }
 @media (min-width: 992px) { #mainNav { box-shadow: none; background-color: transparent; }
@@ -2729,35 +2732,36 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
   #mainNav .navbar-nav .nav-item .nav-link { color: rgba(255, 255, 255, 0.7); padding: 0 1rem; }
   #mainNav .navbar-nav .nav-item .nav-link:hover { color: #fff; }
   #mainNav .navbar-nav .nav-item:last-child .nav-link { padding-right: 0; }
-  #mainNav.navbar-scrolled { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background-color: #fff; }
+  #mainNav.navbar-scrolled { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background-color: #212529; border: 1px solid #dc3545; }
   #mainNav.navbar-scrolled .navbar-brand { color: #212529; }
-  #mainNav.navbar-scrolled .navbar-brand:hover { color: #fff; }
+  #mainNav.navbar-scrolled .navbar-brand:hover { color: #f4623a; }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link { color: #212529; }
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover { color: #fff; } }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover { color: #f4623a; } }
+
+#mainHeader { padding-top: 10rem; padding-bottom: calc(10rem - 4.5rem); background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/assets/img/bg-masthead.jpg"); }
+#mainHeader a { color: white; }
+#mainHeader a:hover { color: white; text-decoration: underline; }
+#mainHeader a:visited { color: white; }
+
+body, html { width: 100%; height: 100%; }
 
 a { color: #64a19d; }
 a:hover { color: #3c6360; }
 a:active { color: #B25500; }
 a:visited { color: #64a19d; }
 
-header { padding: 126px 0 100px; }
-header a { color: white; }
-header a:hover { color: white; text-decoration: underline; }
-header a:visited { color: white; }
-
-#mainHeader { background-color: #527a7a; }
-
-#mainNav { background-color: #527a7a; }
-
-#mainFooter { background-color: #527a7a; }
+#mainFooter { background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/assets/img/bg-masthead.jpg"); }
 
 hr { border: 1px solid #527a7a; border-radius: 5px; }
 
+hr.section-divider { border-width: 0.1rem; border-color: #5c4d42; }
+
 h1 h2 h3 h4 h5 { font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; color: #1f2e2e; }
 
-section { padding: 6rem 0; padding-bottom: 3rem; }
-section .dates { font-style: italic; }
+section { padding: 6rem 0; padding-bottom: 0; }
+section .dates { font-style: italic; border-bottom: 1px solid #5c4d42; }
 section .tags { paddin: 2rem 1rem; }
 section ul li { padding: 0.1rem 0; }
 
-.skills h5 { color: #527a7a; font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+.skills h5 { color: rgba(0, 0, 0, 0.6); font-size: large; font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+.skills h6 { color: rgba(92, 77, 66, 0.7); font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; text-decoration: underline; text-align: left; }
