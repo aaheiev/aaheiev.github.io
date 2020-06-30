@@ -132,13 +132,15 @@
                 <span class="badge badge-info">Change Management</span>
             </p>
 
-            <h6 class="h6 py-2">Dev automation</h6>
+            <h6 class="h6 py-2">Dev and automation</h6>
             <p class="tags shadow bg-white rounded p-3">
                 <span class="badge badge-info">CI/CD</span>
                 <span class="badge badge-info">Docker</span>
                 <span class="badge badge-info">Linux</span>
                 <span class="badge badge-info">Shell Scripting</span>
                 <span class="badge badge-info">Git</span>
+                <span class="badge badge-info">Kafka</span>
+                <span class="badge badge-info">RabbitMQ</span>
                 <span class="badge badge-info">Inventory</span>
                 <span class="badge badge-info">Jenkins</span>
                 <span class="badge badge-info">Oracle</span>
@@ -226,7 +228,7 @@
   <div class="col-md-4">
     <div class="text-left p-2">
       <p class="dates py-2">Contract: Feb 2020 - now</p>
-      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Azure</span><span class="badge badge-info">Azure Devops</span><span class="badge badge-info">Docker</span><span class="badge badge-info">Kubernetes</span><span class="badge badge-info">CI/CD</span><span class="badge badge-info">Azure Pipelines</span><span class="badge badge-info">Azure Monitoring</span><span class="badge badge-info">Azure Security Monitoring</span><span class="badge badge-info">SEM</span><span class="badge badge-info">CISO</span><span class="badge badge-info">Aqua Security</span><span class="badge badge-info">Microservices</span></p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Azure</span><span class="badge badge-info">Azure Devops</span><span class="badge badge-info">Docker</span><span class="badge badge-info">Kubernetes</span><span class="badge badge-info">CI/CD</span><span class="badge badge-info">Azure Pipelines</span><span class="badge badge-info">Azure Monitoring</span><span class="badge badge-info">Azure Security Monitoring</span><span class="badge badge-info">SEM</span><span class="badge badge-info">CISO</span><span class="badge badge-info">Aqua Security</span><span class="badge badge-info">Microservices</span><span class="badge badge-info">Azure Service Bus</span></p>
     </div>
   </div>
   <div class="col-md-8">
@@ -247,7 +249,7 @@
   <div class="col-md-4">
     <div class="text-left p-2">
       <p class="dates py-2">Contract: June 2018 - Dec. 2020</p>
-      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Docker</span><span class="badge badge-info">Kubernetes</span><span class="badge badge-info">helm</span><span class="badge badge-info">Jenkins</span><span class="badge badge-info">Ansible</span><span class="badge badge-info">Azure</span><span class="badge badge-info">AWS</span><span class="badge badge-info">Groovy</span><span class="badge badge-info">.Net</span><span class="badge badge-info">NodeJS</span><span class="badge badge-info">Ruby</span><span class="badge badge-info">Airflow</span><span class="badge badge-info">ML</span><span class="badge badge-info">H2O</span><span class="badge badge-info">MSSQL</span><span class="badge badge-info">Load / acceptance testing</span><span class="badge badge-info">Automation</span></p>
+      <p class="tags shadow bg-white rounded p-3"><span class="badge badge-info">Docker</span><span class="badge badge-info">Kubernetes</span><span class="badge badge-info">helm</span><span class="badge badge-info">Jenkins</span><span class="badge badge-info">Kafka</span><span class="badge badge-info">Kinesis</span><span class="badge badge-info">WhiteSource</span><span class="badge badge-info">CheckMarx</span><span class="badge badge-info">Ansible</span><span class="badge badge-info">Azure</span><span class="badge badge-info">AWS</span><span class="badge badge-info">Groovy</span><span class="badge badge-info">.Net</span><span class="badge badge-info">NodeJS</span><span class="badge badge-info">Ruby</span><span class="badge badge-info">Airflow</span><span class="badge badge-info">ML</span><span class="badge badge-info">H2O</span><span class="badge badge-info">MSSQL</span><span class="badge badge-info">Load / acceptance testing</span><span class="badge badge-info">Automation</span></p>
     </div>
   </div>
   <div class="col-md-8">
@@ -264,8 +266,8 @@
       </ul>
       <p><strong>What was done:</strong></p>
       <ul>
-        <li>Dockerized complex .Net event-processing application and created set of micro-services
-          <ol>
+        <li class="py-2">Dockerized complex .Net event-processing application and created set of micro-services
+          <ol class="py-2">
             <li>application requirements (health url, logging, resources, etc.)</li>
             <li>resources profiling: cpu/ram requests and limits with autoscaling rules</li>
             <li>local dev environment with docker-compose</li>
@@ -274,8 +276,15 @@
             <li>ci/cd automation: Jenkins, Teamcity, Octopus</li>
           </ol>
         </li>
-        <li>ML prediction app pipelines - design and automation
-          <ol>
+        <li class="py-2">Application stack security scans (WhiteSource, CheckMarx)</li>
+        <li class="py-2">Cross-cloud (Azure - AWS) event's and analytics migration
+          <ol class="py-2">
+            <li>Kafka monitoring</li>
+            <li>Kafka to AWS Kinesis synchronisation</li>
+          </ol>
+        </li>
+        <li class="py-2">ML prediction app pipelines - design and automation
+          <ol class="py-2">
             <li>airflow configuration and train/test workflow automation</li>
             <li>dynamic H2O cluster allocation in Kubernetes</li>
             <li>docker jetty container with H2O models</li>
@@ -469,6 +478,7 @@
 </div>
 
 </section>
+<br class="py-2" />
 
     <!-- Footer -->
 <footer class="py-5" id="mainFooter">
@@ -476,7 +486,7 @@
         <p class="m-0 text-center text-white-75">
             Andrii Aheiev 2020. Amstelveen, The Netherlands<br />
             <small>
-                Page generated at 2020-06-29 22:28
+                Page generated at 2020-06-30 19:31
             </small>
         </p>
     </div>
@@ -491,7 +501,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <!-- Custom JavaScript for this theme -->
-    <script src="/assets/js/scrolling-nav.js"></script>
+    <script src="/assets/js/one-page.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141122387-1"></script>
     <script>
