@@ -2749,6 +2749,7 @@ header a:hover { color: rgba(0, 0, 0, 0.5); }
 #skills .skill_name { width: 12rem; }
 
 #experience .card-header { background-color: #e9ecef; }
+#experience .card-header a { color: #17a2b8; }
 
 section { padding: 4rem 0; }
 
